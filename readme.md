@@ -2,6 +2,8 @@
 
 Une carte de vœux interactive, moderne et magique pour souhaiter une bonne année 2026. Avec des animations 3D, des étoiles filantes, de la musique d'ambiance et des confettis !
 
+https://carte-de-v-ux-interactive.vercel.app/
+
 ![Aperçu](https://carte-de-v-ux-interactive.vercel.app/)
 
 ---
