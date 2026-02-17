@@ -35,13 +35,13 @@ Une carte de vœux interactive, moderne et magique pour souhaiter une bonne ann�
 
 ## 📁 Structure du projet
 
-text
+```bash
 📂 projet-voeux/
 ├── 📄 index.html          # Structure de la page
 ├── 🎨 style.css           # Tous les styles et animations
 ├── 🚀 script.js           # Toute l'interactivité
 └── 📄 README.md           # Documentation
-
+```
 ---
 
 ## 🛠️ Installation
