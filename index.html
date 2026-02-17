@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carte de Vœux Interactive · 2026</title>
+    
+    <!-- Fichier CSS externe -->
+    <link rel="stylesheet" href="style.css">
+    
+    <!-- Bibliothèque pour les confettis -->
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1"></script>
+</head>
+<body>
+
+    <!-- Canvas pour les confettis -->
+    <canvas id="canvas-confetti"></canvas>
+
+    <!-- Particules d'arrière-plan -->
+    <div class="particles" id="particles"></div>
+
+    <!-- Étoiles filantes -->
+    <div id="shooting-stars-container"></div>
+
+    <!-- Carte principale -->
+    <main class="carte-voeux" id="carteVoeux">
+        <h1 class="titre">Fais un <span>vœu</span></h1>
+        <div class="sous-titre">Une étincelle pour 2026</div>
+
+        <!-- Formulaire -->
+        <form id="formVoeux">
+            <!-- Champ 1 : De la part de -->
+            <div class="groupe-champ">
+                <div class="label-icone">
+                    <span>✦</span> De la part de
+                </div>
+                <input type="text" id="nomEmetteur" placeholder="Ton prénom ou un pseudo" maxlength="40">
+            </div>
+
+            <!-- Champ 2 : À destination de -->
+            <div class="groupe-champ">
+                <div class="label-icone">
+                    <span>✧</span> À destination de
+                </div>
+                <input type="text" id="nomDestinataire" placeholder="Le nom de la personne qui recevra ce vœu" maxlength="40">
+            </div>
+
+            <!-- Champ 3 : Message principal -->
+            <div class="groupe-champ">
+                <div class="label-icone">
+                    <span>❀</span> Ton message
+                </div>
+                <textarea id="messageVoeu" placeholder="Écris ici ton vœu le plus sincère... (exemple : Que cette nouvelle année t'apporte la sérénité et la réussite.)" maxlength="200"></textarea>
+                <div class="compteur-msg" id="compteur">0 / 200</div>
+            </div>
+
+            <!-- Sélecteur d'ambiance -->
+            <div class="selecteur-ambiance">
+                <div class="label-ambiance">Ambiance de ton vœu</div>
+                <div class="pastilles">
+                    <label class="pastille">
+                        <input type="radio" name="ambiance" value="priere" id="ambiancePriere" checked> 🙏 Sérénité
+                    </label>
+                    <label class="pastille">
+                        <input type="radio" name="ambiance" value="reussite" id="ambianceReussite"> ✨ Réussite
+                    </label>
+                    <label class="pastille">
+                        <input type="radio" name="ambiance" value="tendresse" id="ambianceTendresse"> 💖 Tendresse
+                    </label>
+                </div>
+            </div>
+
+            <!-- Bouton -->
+            <div class="bouton-envoi">
+                <button type="submit" class="btn-etoile">
+                    <span>✦</span> Libérer l'étoile <span>✦</span>
+                </button>
+            </div>
+
+            <!-- Message de confirmation -->
+            <div id="messageSucces" class="message-succes">
+                <span>✨</span>
+                Ton vœu a été libéré dans l'univers !
+            </div>
+        </form>
+
+        <!-- Pied de page -->
+        <div class="pied-doux">
+            <span class="citation">“Les plus beaux vœux sont ceux qu'on prend le temps d'écrire.”</span>
+            <span class="annee-lumiere">Bienvenue en 2026 ✦</span>
+        </div>
+    </main>
+
+    <!-- Fichier JavaScript externe -->
+    <script src="script.js"></script>
+</body>
+</html>
