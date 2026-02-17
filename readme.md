@@ -4,8 +4,7 @@ Une carte de vœux interactive, moderne et magique pour souhaiter une bonne ann�
 
 https://carte-de-v-ux-interactive.vercel.app/
 
-![Aperçu](<img width="1064" height="600" alt="image" src="https://github.com/user-attachments/assets/3699f807-9177-43d2-94f7-2ec27da0b635" />
-)
+![Aperçu](https://github.com/user-attachments/assets/3699f807-9177-43d2-94f7-2ec27da0b635)
 
 ---
 
